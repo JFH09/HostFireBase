@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" conent="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Iniciar Session</h1>
+        <button id="loginGoogle" onclick="guardarDatos()" >
+            inicia con google
+        </button>
+
+        <button id="loginFacebook" onclick="guardarDatos()">
+            inicia con Facebook
+        </button>
+
+        <button id="loginYahoo" onclick="guardarDatos2()">
+            inicia con Yahoo
+        </button>
+
+        <div id="root">
+            <img id="avatar" src="" alt="">
+        </div>
+
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+        <script: src="//api.login.yahoo.com/oauth2/request_auth"></script>
+        </script: src=
+        https://api.login.yahoo.com/oauth2/request_auth?client_id=dj0yJmk9WGx0QlE0UWdCa0hKJmQ9WVdrOWNrNUhXVnBhTkhFbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01OA--&response_type=code&redirect_uri=https://yahoo.com&scope=openid%20mail-r&nonce=YihsFwGKgt3KJUh6tPs2></script>
+
+        <!-- firebaseUI -->
+        <script src="https://cdn.firebase.com/libs/firebaseui/7.14.0/firebaseui.js"></script>
+        
+        <!--<script src="https://cdn.firebase.com/libs/firebaseui/7.14.0/firebase-analytics.js"></script>-->
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDp6Ue7IEjVWkbSXKs7-wetT2PwOiDBOKQ",
+              authDomain: "bdhost-d6634.firebaseapp.com",
+              databaseURL: "https://bdhost-d6634.firebaseio.com",
+              projectId: "bdhost-d6634",
+              storageBucket: "bdhost-d6634.appspot.com",
+              messagingSenderId: "463697984409",
+              appId: "1:463697984409:web:9b4e1acec58e19a672f108",
+              measurementId: "G-FR0PCYJ8N9"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+           //<!-- firebase.analytics();-->
+        </script>
+
+        <script src="app.js"></script>
+</body>
+</html>
